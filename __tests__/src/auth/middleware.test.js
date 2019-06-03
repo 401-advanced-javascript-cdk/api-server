@@ -44,7 +44,7 @@ describe('Auth Middleware', () => {
       let next = jest.fn();
       let middleware = auth;
 
-      return middleware(req, res, next)
+      return middleware()(req, res, next)
         .then(() => {
           expect(next).toHaveBeenCalledWith(errorObject);
         });
@@ -62,7 +62,7 @@ describe('Auth Middleware', () => {
       let next = jest.fn();
       let middleware = auth;
 
-      return middleware(req,res,next)
+      return middleware()(req,res,next)
         .then( () => {
           cachedToken = req.token;
           expect(next).toHaveBeenCalledWith();
@@ -79,7 +79,7 @@ describe('Auth Middleware', () => {
       let res = {};
       let next = jest.fn();
       let middleware = auth;
-      return middleware(req,res,next)
+      return middleware()(req,res,next)
       .then( () => {
         cachedToken = req.token;
         expect(cachedToken).toBeDefined();

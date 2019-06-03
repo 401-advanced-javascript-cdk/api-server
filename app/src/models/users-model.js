@@ -80,7 +80,6 @@ users.methods.comparePassword = function(password) {
 };
 
 users.methods.generateToken = function(type) {
-  console.log(this);
   let token = {
     id: this._id,
     capabilities: capabilities[this.role],
