@@ -4,7 +4,7 @@ API server with auth middleware for signup and routes
 
 ## Links and Resources
 * [Submission PR](https://github.com/401-advanced-javascript-cdk/api-server/pull/1)
-* [Travis](hhttps://travis-ci.com/401-advanced-javascript-cdk/api-server)
+* [Travis](https://travis-ci.com/401-advanced-javascript-cdk/api-server)
 * [Heroku Deployment](https://api-server-cdk.herokuapp.com/)
 
 ## Auth Routes
